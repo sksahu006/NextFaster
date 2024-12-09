@@ -19,14 +19,19 @@ const nextConfig = {
         pathname: "/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        port: "",
+        pathname: "/**",
+      }
     ],
   },
   async rewrites() {
     return [
       {
         source: "/insights/vitals.js",
-        destination:
-          "https://cdn.vercel-insights.com/v1/speed-insights/script.js",
+        destination: "https://cdn.vercel-insights.com/v1/speed-insights/script.js",
       },
       {
         source: "/insights/events.js",
@@ -34,13 +39,11 @@ const nextConfig = {
       },
       {
         source: "/hfi/events/:slug*",
-        destination:
-          "https://vitals.vercel-insights.com/v1/:slug*?dsn=KD0ni5HQVdxsHAF2tqBECObqH",
+        destination: "https://vitals.vercel-insights.com/v1/:slug*?dsn=KD0ni5HQVdxsHAF2tqBECObqH",
       },
       {
         source: "/hfi/vitals",
-        destination:
-          "https://vitals.vercel-insights.com/v2/vitals?dsn=fsGnK5U2NRPzYx0Gch0g5w5PxT1",
+        destination: "https://vitals.vercel-insights.com/v2/vitals?dsn=fsGnK5U2NRPzYx0Gch0g5w5PxT1",
       },
     ];
   },
