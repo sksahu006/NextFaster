@@ -2,6 +2,8 @@
 const nextConfig = {
   experimental: {
     ppr: true,
+    inlineCss: true,
+    reactCompiler: true,
   },
   typescript: {
     ignoreBuildErrors: true,

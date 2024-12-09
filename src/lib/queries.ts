@@ -16,7 +16,7 @@ export async function getUser() {
   const sessionCookie = (await cookies()).get("session");
   if (!sessionCookie || !sessionCookie.value) {
     return null;
-  }
+  } 
 
   const sessionData = await verifyToken(sessionCookie.value);
   if (
