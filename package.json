@@ -11,8 +11,7 @@
     "format:check": "prettier --check .",
     "format": "prettier --write . --list-different",
     "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio",
-    "seed": "cross-env NODE_ENV=development TS_NODE_PROJECT=tsconfig.seed.json ts-node --require tsconfig-paths/register scripts/seed.ts"
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.68",
